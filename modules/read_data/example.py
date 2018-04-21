@@ -56,7 +56,7 @@ import json
 # writer2.close()
 
 # parse tfrecord
-tfrecords = "../../data/tmp/test1.tfrecord"
+tfrecords = "../../data/tmp/train-00001-of-00002"
 filename_qu = tf.train.string_input_producer([tfrecords])
 
 reader = tf.TFRecordReader()

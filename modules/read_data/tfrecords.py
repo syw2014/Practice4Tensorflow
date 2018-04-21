@@ -152,19 +152,32 @@ def _process_dataset(name, dataset, num_shards, set_threads):
 
     # Wait for all the threads to terminate.
     coord.join(threads)
-    print("%s: Finished processing all %d image-caption pairs in data set '%s'." %
+    print("%s: Finished processing all %d data pairs in data set '%s'." %
           (datetime.now(), len(dataset), name))
 
 
-def read_and_decode():
-    pass
+def parse_sequence_example(serialized, sample_feature):
+    """Parse a tensorflow.SequenceExample into an real sample.
+    Args:
+        serialized: A scalar string Tensor, a single serialized SequenceExample.
+        sample_feature: Name of SequenceExample feature list you have set in Serialized
+    Return:
+        A raw sample.
+    """
+    _, sequence = tf.parse_single_sequence_example(
+        serialized,
+        # context_features=
+        sequence_features={
+            sample_feature: tf.FixedLenSequenceFeature([], dtype=tf.string)
+        })
+    sample = sequence[1]
 
 
 def main():
     print("Test TFRecods generation")
     with open("../../data/test.json") as f:
         dataset = f.readlines()
-        _process_dataset("train", dataset, 2,2)
+        _process_dataset("train", dataset, 2, 2)
 
 
 if __name__ == "__main__":
