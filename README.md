@@ -12,3 +12,5 @@ how to imporve the efficiency of tensorflow. And in this [repo](https://github.c
 
 ## Modules
 ### Read Data <a name="read_data"></a>
+[Here](https://github.com/syw2014/Practice4Tensorflow/blob/master/modules/read_data/tfrecords.py) is a simple to show how to create TFRecord with multi-thread, 
+and prefecth mechanism parse Tensorflow.SequenceExample.
