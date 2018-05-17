@@ -291,7 +291,6 @@ def get_data(
         sample = parse_sequence_example(serialized_sequence_example, "sample")
         samples.append(sample)
 
-
     return samples
 
 
@@ -311,13 +310,11 @@ def main():
         12,
         4,
         2300)
-    
+
     with tf.Session() as sess:
         sess.run(init)
         for x in samples:
             print(tf.cast(x, tf.string))
-
-
 
 
 if __name__ == "__main__":
