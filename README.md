@@ -20,13 +20,13 @@ and extention.You can check [thensorflow queuing](http://adventuresinmachinelear
 ### A Simple DL Project Template <a name="dl_template"></a>
 As a beginner of Tensorflow you may confuse how to create a completed project with your own model [repo](https://github.com/syw2014/Practice4Tensorflow/blob/master/modules/project_template.py), 
 I had wrote a simple workflow for creating a deep learning project, there are seven parts as bellow,
-    - 1 Define hyperparameters, which are the parameters you should define or set before training model, like learning rate, number of train stpes/ epoch, unit dimensions.
-    - 2 Prepare input data, load data from files and do some pre-process to generate train X and train y(label).
-    - 3 Construct model, define placeholders, networks like CNN/RNN, weights and bias, computational logic.
-    - 4 Define loss function, here you can use some classical loss like cross-entropy, MSE, Maximum-Margin, and you need define you own loss function according your task.
-    - 5 Create optimizer, the simplest way you create your optimizer is just choose one optimize algorithm, but there are more things you should consider, that whether
-        your task need to do gradient clip, change optimizer after several steps.
-    - 6 Define the single train step
-    - 7 Create Tensorflow session, and initialize all variables
-    - 8 Train your model
+- 1 Define hyperparameters, which are the parameters you should define or set before training model, like learning rate, number of train stpes/ epoch, unit dimensions.
+- 2 Prepare input data, load data from files and do some pre-process to generate train X and train y(label).
+- 3 Construct model, define placeholders, networks like CNN/RNN, weights and bias, computational logic.
+- 4 Define loss function, here you can use some classical loss like cross-entropy, MSE, Maximum-Margin, and you need define you own loss function according your task.
+- 5 Create optimizer, the simplest way you create your optimizer is just choose one optimize algorithm, but there are more things you should consider, that whether
+    your task need to do gradient clip, change optimizer after several steps.
+- 6 Define the single train step
+- 7 Create Tensorflow session, and initialize all variables
+- 8 Train your model
 Each parts of the project will contains more tricks you should consider, this will be discussed in future practice.
