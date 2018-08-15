@@ -16,6 +16,7 @@ operation graph,etc, and may also include how to imporve the efficiency of tenso
 [Here](https://github.com/syw2014/Practice4Tensorflow/blob/master/modules/read_data/tfrecords.py) is a simple example to indicate how to create TFRecord with multi-thread, 
 and prefecth mechanism parse Tensorflow.SequenceExample.The original version was came from [this](https://github.com/AIChallenger/AI_Challenger), and I made some changes
 and extention.You can check [thensorflow queuing](http://adventuresinmachinelearning.com/introduction-tensorflow-queuing/) for more detail explanation.
+A practical post can be found [here](https://cs230-stanford.github.io/tensorflow-input-data.html)
 
 ### A Simple DL Project Template <a name="dl_template"></a>
 As a beginner of Tensorflow you may confuse how to create a completed project with your own model [repo](https://github.com/syw2014/Practice4Tensorflow/blob/master/modules/project_template.py), 
