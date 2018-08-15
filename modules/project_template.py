@@ -67,4 +67,4 @@ with tf.Session(config=config) as sess:
     final_loss = sess.run(loss, feed_dict={X: train_x, y_: train_y})
     print("Step: {}, loss={}, W={}, b={}".format(max_train_steps, final_loss, sess.run(W), sess.run(b)))
     weight, bias = sess.run([W, b])
-    print("Linear Regression Model: Y={}X + {}".format(weight[0][0], bias[0]))
+    print("Linear Regression Model: Y={}*X + {}".format(weight[0][0], bias[0]))
