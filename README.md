@@ -17,6 +17,13 @@ operation graph,etc, and may also include how to imporve the efficiency of tenso
 and prefecth mechanism parse Tensorflow.SequenceExample.The original version was came from [this](https://github.com/AIChallenger/AI_Challenger), and I made some changes
 and extention.You can check [thensorflow queuing](http://adventuresinmachinelearning.com/introduction-tensorflow-queuing/) for more detail explanation.
 A practical post can be found [here](https://cs230-stanford.github.io/tensorflow-input-data.html)
+I have wrote a new pipline process for chinese text with tf.dataset [here](https://github.com/syw2014/Practice4Tensorflow/blob/master/modules/read_data/dataset_api_demo.py), 
+a) define hyper-parameters
+b) each line parsed function
+c) sequence padding function
+d) label convertion
+e) dataset iterator creation
+f) consume batch data
 
 ### A Simple DL Project Template <a name="dl_template"></a>
 As a beginner of Tensorflow you may confuse how to create a completed project with your own model [repo](https://github.com/syw2014/Practice4Tensorflow/blob/master/modules/project_template.py), 
